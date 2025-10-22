@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="jonard.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <div class="header" id="header">
+    <div class="logo">PORTFOLIO</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggler" id="menu-toggler">☰</div>
+  </div>
+
+  <!-- FLOATING HOME BUTTON -->
+  <div class="floating-home" onclick="scrollToTop()">🏠</div>
+
+  <div class="container">
+
+    <!-- HOME SECTION -->
+    <section class="card" id="home">
+      <h2>HOME</h2>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <div class="picture-box">
+          <img src="jonard.jpg" alt="Jonard V. Barbarona" class="profile-pic"/>
+        </div>
+        <div>
+          <p><b>JONARD V. BARBARONA</b></p>
+          <p>ML nalang tamad pa</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="card" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Drawing / Graphic Design</li>
+        <li>Running / Track & Field</li>
+        <li>Responsive Web Design</li>
+        <li>Problem-Solving & Debugging</li>
+        <li>Data Structures & Algorithms</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">🎨 Design Portfolio</div>
+        <div class="project-card">💻 Web App</div>
+        <div class="project-card">📱 Mobile Prototype</div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: jonard@example.com</p>
+      <p>LinkedIn | GitHub | Twitter</p>
+      <button class="btn">Send Message</button>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Jonard V. Barbarona. All Rights Reserved.</p>
+  </footer>
+
+  <script src="jonard.js"></script>
+</body>
+</html>
